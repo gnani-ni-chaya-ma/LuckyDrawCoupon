@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/LuckyDrawCoupon",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
