@@ -23,7 +23,7 @@ export class CouponComponent implements OnInit {
     public dialog: MatDialog,
     private toastr: ToastrService,
     private spinner: NgxSpinnerService,
-    private _apiService: ApiService,
+    public _apiService: ApiService,
   ) {
   }
 
