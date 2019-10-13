@@ -1,1 +1,26 @@
-<p>print works!</p>
+<h1 mat-dialog-title>Coupon</h1>
+<div mat-dialog-content #printSection>
+  <table style="border-collapse: collapse;" border="1" cellpadding="10">
+    <tr>
+      <th colspan="2">JJ-112 Luckydraw</th>
+    </tr>
+    <tr>
+      <th align="right">Contact No</th>
+      <td>{{data?.contactNumber}}</td>
+    </tr>
+    <tr>
+      <th align="right">Coupon</th>
+      <td>{{data?.coupon}}</td>
+    </tr>
+    <tr>
+      <th align="right">Drawtime</th>
+      <td>{{data?.drawTime | date:'medium'}}</td>
+    </tr>
+  </table>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button color="warn" (click)="dialogRef.close()">Cancel</button>
+  <button mat-stroked-button color="primary" (click)="printCoupon(printSection)" cdkFocusInitial>
+    <mat-icon>print</mat-icon> Print
+  </button>
+</div>
