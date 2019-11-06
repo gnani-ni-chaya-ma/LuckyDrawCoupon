@@ -24,7 +24,7 @@ export class PrintComponent {
         <head>
           <title>Print Coupon</title>
         </head>
-      <body onload="window.print();window.close()">${printSection.innerHTML}</body>
+      <body onload="window.print();return false;" onafterprint="window.close();">${printSection.innerHTML}</body>
       </html>`
     );
     popupWin.document.close();
