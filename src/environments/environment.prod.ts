@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://104.211.88.75:8000'
+  apiUrl: 'http://youthapi.dbf.ooo:8001'
 };

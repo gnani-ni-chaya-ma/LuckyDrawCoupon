@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://3.16.51.94:60371',
+  apiUrl: 'http://youthapi.dbf.ooo:8001',
   // apiUrl: 'http://104.211.88.75:8000'
 };
 
