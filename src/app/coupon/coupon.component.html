@@ -19,6 +19,16 @@
 
       <p>
         <mat-form-field appearance="outline">
+          <mat-label>Player name</mat-label>
+          <input autofocus type="text" matInput placeholder="Player name" formControlName="playerName">
+          <mat-error *ngIf="f.playerName.errors?.required">
+            Player name is required
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="outline">
           <mat-label>Contact No</mat-label>
           <input autofocus type="text" matInput placeholder="Contact No" formControlName="contactNumber">
           <mat-error *ngIf="f.contactNumber.errors?.required">

@@ -29,6 +29,7 @@ export class CouponComponent implements OnInit {
 
   ngOnInit() {
     this.form = this._formBuilder.group({
+      playerName: [null, [Validators.required]],
       contactNumber: [null, [Validators.required, Validators.pattern(/^[6-9]\d{9}$/)]],
     });
   }
@@ -49,6 +50,7 @@ export class CouponComponent implements OnInit {
           disableClose: true,
         });
         this.f.contactNumber.reset();
+        this.f.playerName.reset();
         this.spinner.hide();
       }
     } catch (error) {
